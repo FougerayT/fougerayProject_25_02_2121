@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="665.0" prefWidth="921.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TabPane layoutX="210.0" layoutY="78.0" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="Creation">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane layoutX="216.0" layoutY="108.0" prefHeight="371.0" prefWidth="600.0" style="-fx-background-color: Aquamarine;" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <tabs>
+                            <Tab text="Entreprise">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <Label layoutX="55.0" layoutY="36.0" text="Numero Siret" />
+                                          <TextField layoutX="165.0" layoutY="32.0" prefHeight="25.0" prefWidth="409.0" />
+                                          <Label layoutX="32.0" layoutY="108.0" text="Nom entreprise" />
+                                          <Label layoutX="44.0" layoutY="154.0" text="Date debut" />
+                                          <Label layoutX="330.0" layoutY="154.0" text="Date de fin" />
+                                          <DatePicker id="Date_debut" layoutX="126.0" layoutY="150.0" />
+                                          <DatePicker id="Date_fin" layoutX="400.0" layoutY="150.0" />
+                                          <TextField layoutX="138.0" layoutY="104.0" prefHeight="25.0" prefWidth="150.0" />
+                                          <Button layoutX="230.0" layoutY="64.0" mnemonicParsing="false" text="Rechercher L'entreprise" />
+                                          <Label layoutX="316.0" layoutY="108.0" text="IDCC" />
+                                          <TextField layoutX="375.0" layoutY="104.0" prefHeight="25.0" prefWidth="150.0" />
+                                          <Label layoutX="44.0" layoutY="196.0" text="Liste des OPCO" />
+                                          <ComboBox layoutX="138.0" layoutY="192.0" prefHeight="25.0" prefWidth="444.0" promptText="OPCO 1" />
+                                          <Label alignment="CENTER" layoutX="263.0" layoutY="233.0" text="Frais annexes ">
+                                             <font>
+                                                <Font name="System Bold" size="12.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="37.0" layoutY="262.0" text="Hebergement" />
+                                          <Label layoutX="37.0" layoutY="293.0" text="Restauration" />
+                                          <Label layoutX="304.0" layoutY="262.0" text="Premier Equipements" />
+                                          <Label layoutX="305.0" layoutY="293.0" text="Mobilités" />
+                                          <TextField layoutX="138.0" layoutY="258.0" prefHeight="25.0" prefWidth="150.0" />
+                                          <TextField layoutX="138.0" layoutY="289.0" prefHeight="25.0" prefWidth="150.0" />
+                                          <TextField layoutX="424.0" layoutY="288.0" prefHeight="25.0" prefWidth="150.0" />
+                                          <TextField layoutX="424.0" layoutY="257.0" prefHeight="25.0" prefWidth="150.0" />
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab text="Apprenti">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                              </content>
+                            </Tab>
+                              <Tab text="OPCO">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                 </content>
+                              </Tab>
+                              <Tab text="Dossier">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                 </content>
+                              </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Visualisation">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TabPane layoutX="200.0" layoutY="76.0" prefHeight="371.0" prefWidth="600.0" style="-fx-background-color: Chartreuse;" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <tabs>
+                            <Tab text="Entreprise">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <TableView layoutX="171.0" layoutY="50.0" prefHeight="342.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <columns>
+                                              <TableColumn prefWidth="150.0" text="Nom entreprise" />
+                                                <TableColumn prefWidth="191.0" text="Siret" />
+                                                <TableColumn text="IDCC" />
+                                                <TableColumn prefWidth="107.0" text="Date debut" />
+                                                <TableColumn prefWidth="113.0" text="Date fin" />
+                                                <TableColumn prefWidth="117.0" text="OPCO associé" />
+                                              <TableColumn prefWidth="162.0" text="Frais annexes" />
+                                            </columns>
+                                          </TableView>
+                                       </children>
+                                    </AnchorPane>
+                              </content>
+                            </Tab>
+                            <Tab text="Apprenti">
+                              <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                              </content>
+                            </Tab>
+                              <Tab text="OPCO">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                 </content>
+                              </Tab>
+                              <Tab text="Dossier">
+                                 <content>
+                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                                 </content>
+                              </Tab>
+                          </tabs>
+                        </TabPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Aide">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
